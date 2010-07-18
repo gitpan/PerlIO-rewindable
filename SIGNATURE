@@ -1,0 +1,36 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.64.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 10871592a1cc1a14a9f4079494fb502be998e786 .cvsignore
+SHA1 3ce8149f6d62e1fccebdc21a91c924c723f4b7c3 Build.PL
+SHA1 27db1b227185253317f76ced9ebd8063dcf499b1 Changes
+SHA1 1449768538b43b652ddf9e75cebccd61b24f8d44 MANIFEST
+SHA1 be29357a0c1f6871ea8df93dc2805a4ae3d7813b META.yml
+SHA1 cbe646e9eec8e4cf1175c7fd8cb87a31ad241a82 Makefile.PL
+SHA1 bb4da93f1c1f90cd4a819d7144a5fff65bd52ced README
+SHA1 c58bf6064f38ec571e1634791d29e76a43128c04 lib/PerlIO/.cvsignore
+SHA1 8959a420068c67338b194049dec6d5d4c552a3cd lib/PerlIO/rewindable.pm
+SHA1 16e470b5fee9a0fbe1e5bb2122ff2c8063726d09 lib/PerlIO/rewindable.xs
+SHA1 0e141eecf3ca4903ef38d9413b5403a9ddb0392f t/pod_cvg.t
+SHA1 74a957cd8b93f25672ecc6aa578a671d084dd343 t/pod_syn.t
+SHA1 4dc1bb11c63e291108bf63a4085bc42dad25e42d t/rewind.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAkxDaIsACgkQOV9mt2VyAVFyYQCfVYgzdKbbGISZAQWdQ2nv43yl
+fs8AnA2tneAq2BKrZ9bork3BEk8Bxzld
+=xHoi
+-----END PGP SIGNATURE-----

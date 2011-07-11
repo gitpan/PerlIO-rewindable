@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.64.
+signed via the Module::Signature module, version 0.68.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,23 +14,24 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 10871592a1cc1a14a9f4079494fb502be998e786 .cvsignore
-SHA1 3ce8149f6d62e1fccebdc21a91c924c723f4b7c3 Build.PL
-SHA1 27db1b227185253317f76ced9ebd8063dcf499b1 Changes
-SHA1 1449768538b43b652ddf9e75cebccd61b24f8d44 MANIFEST
-SHA1 be29357a0c1f6871ea8df93dc2805a4ae3d7813b META.yml
-SHA1 cbe646e9eec8e4cf1175c7fd8cb87a31ad241a82 Makefile.PL
-SHA1 bb4da93f1c1f90cd4a819d7144a5fff65bd52ced README
+SHA1 b882bcdebca488107fc2650098e0fcec2e82c62f .cvsignore
+SHA1 ab249c3f1eba8bb5c1238c8b0c212c0123076a54 Build.PL
+SHA1 ecacc677b76eefd665c9a7eb665c78bbf9e31743 Changes
+SHA1 cb13afcb947a13f5d89dd29c9fa0c58714c55c49 MANIFEST
+SHA1 cf92ec4310379136f98a3c0f2c3bef84c4f89e1f META.json
+SHA1 834ef63eea781f995d04d98242c4de3d2c7ed5e0 META.yml
+SHA1 ac10abef4842e562f11f09847244c1a1b1bcca06 Makefile.PL
+SHA1 57b5656d656658b249acc68949b97c44f319591e README
 SHA1 c58bf6064f38ec571e1634791d29e76a43128c04 lib/PerlIO/.cvsignore
-SHA1 8959a420068c67338b194049dec6d5d4c552a3cd lib/PerlIO/rewindable.pm
-SHA1 16e470b5fee9a0fbe1e5bb2122ff2c8063726d09 lib/PerlIO/rewindable.xs
-SHA1 0e141eecf3ca4903ef38d9413b5403a9ddb0392f t/pod_cvg.t
-SHA1 74a957cd8b93f25672ecc6aa578a671d084dd343 t/pod_syn.t
+SHA1 a052449515825321a8e1c334d2b0d121d7ede92f lib/PerlIO/rewindable.pm
+SHA1 729d234b1a42e104c68344e13965a7c9efb3fd26 lib/PerlIO/rewindable.xs
+SHA1 904d9a4f76525e2303e4b0c168c68230f223c8de t/pod_cvg.t
+SHA1 65c75abdef6f01a5d1588a307f2ddfe2333dc961 t/pod_syn.t
 SHA1 4dc1bb11c63e291108bf63a4085bc42dad25e42d t/rewind.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.9 (GNU/Linux)
+Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAkxDaIsACgkQOV9mt2VyAVFyYQCfVYgzdKbbGISZAQWdQ2nv43yl
-fs8AnA2tneAq2BKrZ9bork3BEk8Bxzld
-=xHoi
+iEYEARECAAYFAk4bS0gACgkQOV9mt2VyAVGRRACffTKVjY0YSdosp6nrNj/GRxnv
+4VMAnRWyySLlIEPMRiLPpmjelNNc5ndZ
+=pbFa
 -----END PGP SIGNATURE-----

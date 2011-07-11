@@ -4,6 +4,10 @@
 #include "XSUB.h"
 #include "perliol.h"
 
+#ifndef PERL_UNUSED_ARG
+# define PERL_UNUSED_ARG(x) PERL_UNUSED_VAR(x)
+#endif /* !PERL_UNUSED_ARG */
+
 #ifndef Newx
 # define Newx(v,n,t) New(0,v,n,t)
 #endif /* !Newx */
@@ -20,6 +24,7 @@ static IV PerlIOrewindable_pushed(pTHX_ PerlIO *f, char const *mode, SV *arg,
 	PerlIO_funcs *funcs)
 {
 	struct PerlIOrewindable *rw = PerlIOSelf(f, struct PerlIOrewindable);
+	PERL_UNUSED_ARG(arg);
 	{
 		IV result = PerlIOBase_pushed(aTHX_ f, mode, NULL, funcs);
 		if(result != 0) return result;
@@ -34,7 +39,6 @@ static IV PerlIOrewindable_pushed(pTHX_ PerlIO *f, char const *mode, SV *arg,
 static IV PerlIOrewindable_popped(pTHX_ PerlIO *f)
 {
 	struct PerlIOrewindable *rw = PerlIOSelf(f, struct PerlIOrewindable);
-	Size_t i;
 	if(rw->position != rw->filled) {
 		PerlIOBase_unread(aTHX_ PerlIONext(f),
 			rw->buffer + rw->position, rw->filled - rw->position);
@@ -61,7 +65,6 @@ static SSize_t PerlIOrewindable_read(pTHX_ PerlIO *f, void *vbuf, Size_t count)
 	if(count) {
 		SSize_t avail = PerlIO_read(PerlIONext(f), cbuf, count);
 		Size_t endpos;
-		U8 *cbufp;
 		if(avail < 0)
 			return avail;
 		endpos = pos + avail;
@@ -141,6 +144,8 @@ static PerlIO_funcs PerlIOrewindable_funcs = {
 };
 
 MODULE = PerlIO::rewindable PACKAGE = PerlIO::rewindable
+
+PROTOTYPES: DISABLE
 
 BOOT:
 	PerlIO_define_layer(aTHX_ &PerlIOrewindable_funcs);
